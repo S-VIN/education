@@ -59,14 +59,13 @@ ostream &operator<<(ostream &os, const BusesForStopResponse &r) {
     for(const auto& bus: r.buses){
         os << bus << " ";
     }
-    os << endl;
     return os;
 }
 
 struct StopsForBusResponse {
     int error;
     string bus;
-    vector<string> stops;
+    map<string, vector<string>> stops_for_buses;
     map<string, vector<string>> buses_for_stops;
 };
 
@@ -75,11 +74,20 @@ ostream &operator<<(ostream &os, const StopsForBusResponse &r) {
         os << "No bus";
         return os;
     }
-    os << r.bus << ": ";
-    for(const auto& stop: r.stops){
-        os << stop << " ";
+
+    for(const auto& stop : r.stops_for_buses.at(r.bus)){
+        cout << "Stop " << stop << ": ";
+        if (r.buses_for_stops.at(stop).size() == 1) {
+            cout << "no interchange";
+        } else {
+            for (const auto& other_bus : r.buses_for_stops.at(stop)) {
+                if (r.bus != other_bus) {
+                    cout << other_bus << " ";
+                }
+            }
+        }
+        cout << endl;
     }
-    os << endl;
     return os;
 }
 
@@ -94,7 +102,7 @@ ostream &operator<<(ostream &os, const AllBusesResponse &r) {
         return os;
     }
     for (auto item : r.stopsForBuses) {
-        os << item.first << ": ";
+        os << "Bus " << item.first << ": ";
         for (auto stop : item.second) {
             os << stop << " ";
         }
@@ -129,7 +137,7 @@ public:
             error = 1;
         }
         if(error == 0){
-            return {error, bus, stops_for_buses.at(bus)};
+            return {error, bus, stops_for_buses, buses_for_stops};
         }
         return {error, bus, {}};
     }
