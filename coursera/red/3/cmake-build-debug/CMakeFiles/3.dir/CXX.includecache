@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/stepan/Yandex.Disk/Documents/education/githubEdu/coursera/red/3/Deque.h
+vector
+-
+stdexcept
+-
+
+/home/stepan/Yandex.Disk/Documents/education/githubEdu/coursera/red/3/main.cpp
+iostream
+-
+Deque.h
+/home/stepan/Yandex.Disk/Documents/education/githubEdu/coursera/red/3/Deque.h
+

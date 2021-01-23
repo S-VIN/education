@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/stepan/Yandex.Disk/Documents/education/githubEdu/coursera/red/1/airline_ticket.h
+string
+-
+
+/home/stepan/Yandex.Disk/Documents/education/githubEdu/coursera/red/1/sort_by.cpp
+airline_ticket.h
+/home/stepan/Yandex.Disk/Documents/education/githubEdu/coursera/red/1/airline_ticket.h
+test_runner.h
+/home/stepan/Yandex.Disk/Documents/education/githubEdu/coursera/red/1/test_runner.h
+algorithm
+-
+numeric
+-
+
+/home/stepan/Yandex.Disk/Documents/education/githubEdu/coursera/red/1/test_runner.h
+sstream
+-
+stdexcept
+-
+iostream
+-
+map
+-
+set
+-
+string
+-
+vector
+-
+
