@@ -85,6 +85,9 @@
 		<Unit filename="/home/stepan/Yandex.Disk/Documents/education/githubEdu/coursera/red/4/main.cpp">
 			<Option target="4"/>
 		</Unit>
+		<Unit filename="/home/stepan/Yandex.Disk/Documents/education/githubEdu/coursera/red/4/test_runner.h">
+			<Option target="4"/>
+		</Unit>
 		<Unit filename="/home/stepan/Yandex.Disk/Documents/education/githubEdu/coursera/red/4/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
