@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/stepan/Yandex.Disk/Documents/education/githubEdu/coursera/red/8/main.cpp
+iostream
+-
+sstream
+-
+string
+-
+vector
+-
+deque
+-
+utility
+-
+map
+-
+set
+-
+

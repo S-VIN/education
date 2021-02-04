@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/stepan/Yandex.Disk/Documents/education/githubEdu/coursera/red/5/sort_students.cpp
+student.h
+/home/stepan/Yandex.Disk/Documents/education/githubEdu/coursera/red/5/student.h
+test_runner.h
+/home/stepan/Yandex.Disk/Documents/education/githubEdu/coursera/red/5/test_runner.h
+algorithm
+-
+
+/home/stepan/Yandex.Disk/Documents/education/githubEdu/coursera/red/5/student.h
+map
+-
+string
+-
+
+/home/stepan/Yandex.Disk/Documents/education/githubEdu/coursera/red/5/test_runner.h
+sstream
+-
+stdexcept
+-
+iostream
+-
+map
+-
+set
+-
+string
+-
+vector
+-
+
